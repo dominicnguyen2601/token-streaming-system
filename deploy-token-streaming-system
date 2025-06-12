@@ -1,0 +1,7 @@
+cd /root/token-streaming-system-master
+pm2 stop token-streaming
+git fetch --all
+npm install --legacy-peer-deps
+pm2 start token-streaming
+sleep 5
+pm2 list
